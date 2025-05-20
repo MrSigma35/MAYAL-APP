@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAYAL - E-Learning Platform</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #f0f8ff; color: #333; }
+    header, section { padding: 60px 20px; text-align: center; }
+    header { background-color: #2563eb; color: white; }
+    header h1 { font-size: 3rem; margin-bottom: 0.5em; }
+    button { padding: 10px 20px; font-weight: bold; color: #2563eb; background: white; border: none; border-radius: 5px; cursor: pointer; }
+    .features, .pricing, .testimonials { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: auto; }
+    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); flex: 1 1 250px; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none; }
+    form button { background: white; color: #2563eb; }
+    footer { background: #2563eb; color: white; padding: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header>
+    <h1>MAYAL</h1>
+    <p>Your Gateway to Modern E-Learning</p>
+    <button onclick="alert('Redirecting to sign up...')">Get Started</button>
+  </header>
+
+  <!-- About Section -->
+  <section>
+    <h2>About MAYAL</h2>
+    <p>MAYAL is a modern e-learning platform designed to empower learners through interactive content, video-based courses, and quizzes.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section>
+    <h2>Features</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Interactive Courses</h3>
+        <p>Learn with videos, PDFs, and interactive quizzes.</p>
+      </div>
+      <div class="card">
+        <h3>Progress Tracking</h3>
+        <p>See your course progress and achievements.</p>
+      </div>
+      <div class="card">
+        <h3>Admin Control</h3>
+        <p>Easily manage and publish new courses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section style="background:#e0ecff">
+    <h2>What Our Learners Say</h2>
+    <div class="testimonials">
+      <div class="card">“MAYAL changed how I learn. It's flexible and powerful.”</div>
+      <div class="card">“The courses are engaging and easy to follow. I love it!”</div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section>
+    <h2>Simple Pricing</h2>
+    <div class="pricing">
+      <div class="card">
+        <h3>Free</h3>
+        <p>Access limited courses</p>
+      </div>
+      <div class="card">
+        <h3>Pro – $9/month</h3>
+        <p>Unlimited access to all content + progress tracking</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section style="background:#2563eb; color:white">
+    <h2>Get in Touch</h2>
+    <form onsubmit="submitForm(event)" style="max-width:400px; margin:auto">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>FAQ</h2>
+    <div class="card">
+      <h4>Is MAYAL free to use?</h4>
+      <p>Yes, there is a free plan with access to limited courses.</p>
+      <h4>How do I access premium content?</h4>
+      <p>You can upgrade to the Pro plan for unlimited access and advanced features.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MAYAL – Empowering Learners Everywhere</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thanks for contacting us. We'll be in touch soon!");
+    }
+  </script>
+</body>
+</html>
